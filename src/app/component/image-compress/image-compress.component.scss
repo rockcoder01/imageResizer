@@ -1,0 +1,86 @@
+[type="file"] {
+    /* Style the color of the message that says 'No file chosen' */
+    color: #878787;
+}
+
+[type="file"]::-webkit-file-upload-button {
+    background: #ED1C1B;
+    border: 2px solid #ED1C1B;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+[type="file"]::-webkit-file-upload-button:hover {
+    background: #fff;
+    border: 2px solid #535353;
+    color: #000;
+}
+
+
+/* GENERAL STYLING OF PAGE — NOT APPLICABLE TO EXAMPLE */
+
+body {
+    padding: 20px;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.download-class {
+    color: white;
+}
+
+.imageText{
+    text-align: center;
+}
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+mat-slider {
+    width: 400px;
+  }
+
+  .footer{
+    background: #152F4F;
+    color:white;
+    
+    .links{
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }

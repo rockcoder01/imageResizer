@@ -1,0 +1,77 @@
+<div class="container">
+  
+    <div class="row">
+        <div class="col-md-12 imageText">
+                <h1 class="text-danger"><b>Resize IMAGE</b></h1>
+                <h3><b>You Online Resize JPG, PNG, SVG or GIF by defining new height and width pixels.
+                    Change image dimensions in bulk. Now You share Your Resize Image Any Where</b></h3>
+                    <p>Site Are Full Secure your Resize Image Not Store In Server All Process In Client Side.</p>
+        </div>
+    </div>
+    <div class="card-header text-center mt-4 border">
+       
+        <div class="row">
+            <div class="col-md-6">
+                <input type="file" accept=".jpg,.png,.jpeg" id="image-input" (change)="selectFile($event)">
+            </div>
+            <div class="col-md-6">
+                <mat-slider thumbLabel width="500" [displayWith]="formatLabel" (change)="fileSizeChange($event.value)" [value]="qualityImages" tickInterval="1000" min="1" max="100"></mat-slider>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <br><h1> Original: Size: {{sizeOfOriginalImage | number : '1.2-2'}}KB </h1>
+            <div class="card-footer">
+                <h1 *ngIf="!localUrl" class="text-center"><i>Please Select Image</i></h1>
+                <br><img [src]="localUrl" height="200px">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <br><h1>Compressed: Size: {{sizeOFCompressedImage | number : '1.2-2'}}KB </h1>
+            <div class="card-footer">
+                <br> <img [src]="localCompressedURl" height="200px">
+            </div>
+            <a class="download-class" download="{{fileName}}" href="{{localCompressedURl}}">
+                <button class="btn" style="width:100%"><i class="fa fa-download"></i>Download</button>
+            </a>
+        </div>
+    </div>  
+</div>
+
+<div class="mt-5 pt-5 pb-5 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company">
+          <h2>ABout</h2>
+          <p class="pr-5 text-white-50">Site Are Full Secure your Resize Image Not Store In Server All Process In Client Side. </p>
+         
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <h4 class="mt-lg-0 mt-sm-3">Pages</h4>
+            <ul class="m-0 p-0">
+              <li>- <a >Home</a></li>
+              <li>- <a >About</a></li>
+              <li>- <a >Image Resize</a></li>
+              <li>- <a >Image Crop</a></li>
+              <li>- <a >Blog</a></li>
+              <li>- <a >Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location">
+          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50">Image Resizer© 2020. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
