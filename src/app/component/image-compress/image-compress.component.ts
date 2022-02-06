@@ -37,6 +37,7 @@ if (event.target.files && event.target.files[0]) {
 var reader = new FileReader();
 reader.onload = (event: any) => {
 this.localUrl = event.target.result;
+this.sizeOfOriginalImage = this.imageCompress.byteCount(this.localUrl)/(1024);
 
 }
 
@@ -47,9 +48,9 @@ reader.readAsDataURL(event.target.files[0]);
 
 compressFile(image:any,fileName:any) {
 var orientation = -1;
-this.sizeOfOriginalImage = this.imageCompress.byteCount(image)/(1024);
+// this.sizeOfOriginalImage = this.imageCompress.byteCount(image)/(1024);
 console.warn('Size in bytes is now:',  this.sizeOfOriginalImage);
-this.imageCompress.compressFile(image, orientation,  50, this.qualityImages,).then(
+this.imageCompress.compressFile(image, orientation,  50, this.qualityImages).then(
 result => {
 this.imgResultAfterCompress = result;
 this.localCompressedURl = result;

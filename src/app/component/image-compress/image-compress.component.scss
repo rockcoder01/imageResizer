@@ -1,33 +1,33 @@
-[type="file"] {
-    /* Style the color of the message that says 'No file chosen' */
-    color: #878787;
-}
+// [type="file"] {
+//     /* Style the color of the message that says 'No file chosen' */
+//     color: #878787;
+// }
 
-[type="file"]::-webkit-file-upload-button {
-    background: #ED1C1B;
-    border: 2px solid #ED1C1B;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px;
-    outline: none;
-    padding: 10px 25px;
-    text-transform: uppercase;
-    transition: all 1s ease;
-}
+// [type="file"]::-webkit-file-upload-button {
+//     background: #ED1C1B;
+//     border: 2px solid #ED1C1B;
+//     border-radius: 4px;
+//     color: #fff;
+//     cursor: pointer;
+//     font-size: 12px;
+//     outline: none;
+//     padding: 10px 25px;
+//     text-transform: uppercase;
+//     transition: all 1s ease;
+// }
 
-[type="file"]::-webkit-file-upload-button:hover {
-    background: #fff;
-    border: 2px solid #535353;
-    color: #000;
-}
+// [type="file"]::-webkit-file-upload-button:hover {
+//     background: #fff;
+//     border: 2px solid #535353;
+//     color: #000;
+// }
 
 
-/* GENERAL STYLING OF PAGE — NOT APPLICABLE TO EXAMPLE */
+// /* GENERAL STYLING OF PAGE — NOT APPLICABLE TO EXAMPLE */
 
-body {
-    padding: 20px;
-}
+// body {
+//     padding: 20px;
+// }
 
 .btn {
     background-color: DodgerBlue;
@@ -46,41 +46,90 @@ body {
     text-align: center;
 }
 
-/* Darker background on mouse-over */
+// /* Darker background on mouse-over */
 
-.btn:hover {
-    background-color: RoyalBlue;
-}
+// .btn:hover {
+//     background-color: RoyalBlue;
+// }
 
 mat-slider {
-    width: 400px;
+    width: 350px;
   }
 
-  .footer{
-    background: #152F4F;
-    color:white;
-    
-    .links{
-      ul {list-style-type: none;}
-      li a{
-        color: white;
-        transition: color .2s;
-        &:hover{
-          text-decoration:none;
-          color:#4180CB;
-          }
-      }
-    }  
-    .about-company{
-      i{font-size: 25px;}
-      a{
-        color:white;
-        transition: color .2s;
-        &:hover{color:#4180CB}
-      }
-    } 
-    .location{
-      i{font-size: 18px;}
-    }
-    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
-  }
+//   footer.site_footer {
+//     background-color: #5290ff;
+//     padding: 15px 0;
+// }
+
+
+
+
+
+.image_upload_section {
+  min-height: calc(100vh - 54px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.image_upload_section h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #212529;
+}
+.image_upload_box {
+  text-align: center;
+  display: block;
+  border: 2px dashed #5290FF;
+  background-color: #FAFCFF;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+}
+.image_upload_box input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+.image_upload_box svg {
+  width: 100px;
+  fill: #5290FF;
+}
+.image_upload_box p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0 28px;
+}
+.image_upload_box p span {
+  color: #5290ff;
+}
+.image_upload_box label {
+  display: inline-block;
+  margin: 0;
+  min-width: 150px;
+  background-color: #5290ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 10px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+footer.site_footer {
+  background-color: #5290ff;
+  padding: 15px 0;
+}
+footer.site_footer p {
+  font-size: 16px;
+}

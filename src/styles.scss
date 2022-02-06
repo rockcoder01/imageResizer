@@ -1,4 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*fonts css end*/
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/*common css start*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, p, a, span{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+}
+body.no_scroll {
+    overflow: hidden;
+}
+a, button, input[type=submit], select{
+    cursor: pointer;
+}
+a, a:hover, a:focus, 
+button, button:hover, button:focus,
+input, input:hover, input:focus, 
+textarea, textarea:hover, textarea:focus,
+select, select:hover, select:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
